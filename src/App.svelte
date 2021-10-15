@@ -5,7 +5,7 @@
 
   // doc: https://www.npmjs.com/package/d3-parliament-chart
 
-  $: graphWidth = 1600;
+  $: graphWidth = 1000;
   $: seatsNumber = 490;
   $: seatRadius = 12;
   $: rowHeight = 45;
@@ -130,7 +130,7 @@
             bind:value={graphWidth}
             on:input={updateChart}
             min="600"
-            max="2000"
+            max="1600"
           />
         </div>
         <div class="flex">
@@ -157,7 +157,6 @@
 
   :global(body) {
     min-height: 100vh;
-    font-size: 1.2em;
   }
 
   :global(.debug line, .debug path) {
@@ -197,7 +196,6 @@
 
     input[type="checkbox"] {
       margin-right: 0.6em;
-	  transform: scale(1.6);
     }
   }
 

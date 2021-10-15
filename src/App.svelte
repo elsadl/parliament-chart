@@ -6,10 +6,10 @@
   // doc: https://www.npmjs.com/package/d3-parliament-chart
 
   $: graphWidth = 1000;
-  $: seatsNumber = 490;
-  $: seatRadius = 8;
-  $: rowHeight = 27;
-  $: sectionsNumber = 49;
+  $: seatsNumber = 577;
+  $: seatRadius = 7;
+  $: rowHeight = 25;
+  $: sectionsNumber = 53;
   $: sectionGap = 0;
   $: seatsError = false;
   $: displayGrid = true;
@@ -68,7 +68,6 @@
         <div class="flex">
           <label for="">Nombre de sièges :</label>
           <input
-            class="uk-range"
             type="number"
             bind:value={seatsNumber}
             on:input={updateChart}
@@ -79,7 +78,6 @@
         <div>
           <label for="">Rayon des cercles : {seatRadius}</label>
           <input
-            class="uk-range"
             type="range"
             bind:value={seatRadius}
             on:input={updateChart}
@@ -90,7 +88,6 @@
         <div>
           <label for="">Hauteur des rangs : {rowHeight}</label>
           <input
-            class="uk-range"
             type="range"
             bind:value={rowHeight}
             on:input={updateChart}
@@ -101,7 +98,6 @@
         <div>
           <label for="">Nombre de sections : {sectionsNumber}</label>
           <input
-            class="uk-range"
             type="range"
             bind:value={sectionsNumber}
             on:input={updateChart}
@@ -112,7 +108,6 @@
         <div>
           <label for="">Décalage entre les sections : {sectionGap}</label>
           <input
-            class="uk-range"
             type="range"
             bind:value={sectionGap}
             on:input={updateChart}
@@ -125,8 +120,7 @@
         <div>
           <label for="">Largeur du graphique : {graphWidth}px</label>
           <input
-            class="uk-range"
-            type="range"
+            type="number"
             bind:value={graphWidth}
             on:input={updateChart}
             min="600"

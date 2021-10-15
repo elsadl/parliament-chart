@@ -7,8 +7,8 @@
 
   $: graphWidth = 1000;
   $: seatsNumber = 490;
-  $: seatRadius = 12;
-  $: rowHeight = 45;
+  $: seatRadius = 8;
+  $: rowHeight = 27;
   $: sectionsNumber = 49;
   $: sectionGap = 0;
   $: seatsError = false;
@@ -49,7 +49,7 @@
     svgExport.downloadSvg(
       document.querySelector("#chart svg"), // SVG DOM Element object to be exported. Alternatively, a string of the serialized SVG can be passed
       "parliament-chart", // chart title: file name of exported image
-      { width: graphWidth / 2, height: graphWidth / 4 } // options (optional, please see below for a list of option properties)
+      { width: graphWidth, height: graphWidth / 2 } // options (optional, please see below for a list of option properties)
     );
   }
 </script>

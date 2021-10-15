@@ -22,7 +22,6 @@
     "d3-parliament-chart": "^0.0.4",
     "node-sass": "^6.0.1",
     "sirv-cli": "^1.0.0",
-    "svelte-preprocess": "^4.9.8",
-    "uikit": "^3.7.6"
+    "svelte-preprocess": "^4.9.8"
   }
 }

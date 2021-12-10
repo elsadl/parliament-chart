@@ -5,12 +5,12 @@
 
   // doc: https://www.npmjs.com/package/d3-parliament-chart
 
-  $: graphWidth = 1000;
-  $: seatsNumber = 577;
-  $: seatRadius = 7;
+  $: graphWidth = 600;
+  $: seatsNumber = 128;
+  $: seatRadius = 9;
   $: rowHeight = 25;
-  $: sectionsNumber = 53;
-  $: sectionGap = 0;
+  $: sectionsNumber = 22;
+  $: sectionGap = 4;
   $: seatsError = false;
   $: displayGrid = true;
   $: deltaSeats = 0;
